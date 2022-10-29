@@ -95,7 +95,7 @@ First, let's add a workflow to lint our Markdown files in this repository.
   Define terms and link to docs.github.com.
 -->
 
-<details id=2 open>
+<details id=2 close>
 <summary><h2>Step 2: Fix the test</h2></summary>
 
 _Great job adding the templated workflow! :tada:_
@@ -139,7 +139,14 @@ If the checks don't appear or if the checks are stuck in progress, there's a few
   Define terms and link to docs.github.com.
 -->
 
-<details id=3>
+<details id=3 open>
+name: Update to step 3
+        uses: skills/action-update-step@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          from_step: 2
+          to_step: 3
+          branch_name: ci
 <summary><h2>Step 3: Upload test reports</h2></summary>
 
 _The workflow has finished running! :sparkles:_
