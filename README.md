@@ -96,7 +96,7 @@ First, let's add a workflow to lint our Markdown files in this repository.
 -->
 
 <details id=2 close>
-<summary><h2>Step 2: Fix the test</h2></summary>
+<summary><h2>name: Step 2, Fix the test</h2></summary>
 
 _Great job adding the templated workflow! :tada:_
 
